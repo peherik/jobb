@@ -55,8 +55,7 @@ if st.button("Visa status"):
 st.divider()
 
 # --- DATAFRAME I EN EXPANDER (DOLD SOM STANDARD) ---
-with st.expander("📊 Visa hela schema-översikten (28 dagar)"):
-    st.write("Klicka på pilen ovan för att stänga/öppna.")
+with st.expander("📊 Visa hela schema-översikten (28 dagar)"):    
     
     # Skapa tabell-data
     headers = []
@@ -73,5 +72,5 @@ with st.expander("📊 Visa hela schema-översikten (28 dagar)"):
     
     # Visa tabellen med lite extra styling
     st.dataframe(df, use_container_width=False)
-
-st.caption(f"Appen räknar ut rullande schema baserat på startmåndag {START_DATE}.")
+    
+    st.caption(f"Appen räknar ut rullande schema baserat på startmåndag {START_DATE}.")
